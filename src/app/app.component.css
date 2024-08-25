@@ -1,0 +1,33 @@
+/* .box{
+  padding: 10px 10px;
+  background-color: #cdcdcd;
+}
+.box h5{
+  font-size: 18px;
+  font-weight: bold;
+} */
+*{
+  background-color: #2b3137;
+}
+.box {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* This makes the box a square */
+  overflow: hidden;
+  background-color: #2b3137; /* Optional: Set a background color */
+}
+
+.box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire area */
+  transform: translate(-50%, -50%); /* Center the image */
+}
+h1
+{
+  color: white;
+  text-align: center;
+}
