@@ -11,7 +11,13 @@ export class DogapiService {
   constructor(private http: HttpClient) { }
 
   getCatImages(): Observable<any> {
-    const apiUrl = 'https://api.thecatapi.com/v1/images/search?limit=12&api_key=live_uWDqWkLVAPX7E8ykijheDkh1rKm3mZ9858pQUc7tBUyLe5AMhpjvS1fylIfaBPvX';
+// ----------------------------------///----------------------------
+    // get a free api key from   https://thecatapi.com  ///
+
+    // or use this free API : https://api.thecatapi.com/v1/images/search?limit=10
+    // ----------------------------------///----------------------------
+
+    const apiUrl = 'https://api.thecatapi.com/v1/images/search?limit=12&api_key=URAPIKEYHERE';
     return this.http.get<any[]>(apiUrl)
 
   }
